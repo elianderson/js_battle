@@ -1,0 +1,91 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Builder</title>
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body>
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>Custom Burger Builder</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="callout">
+          <form>
+            <div class="row">
+              <div class="large-9 columns">
+                <label>Name</label>
+                <input id="name" type="text" placeholder="Epic Burger Name" data-required="true" />
+              </div>
+              <div class="large-3 medium-3 columns">
+                <div class="row collapse">
+                  <label>Burger Price</label>
+                  <div class="input-group">
+                    <span class="input-group-label">$</span>
+                    <input id="price" type="text" placeholder="Burger Price" value="5" class="input-group-field" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-4 columns">
+                <label>Select Cheese</label>
+                <select>
+                  <option value="0">No Cheese</option>
+                  <option value="2">Cheddar</option>
+                  <option value="1">Swiss</option>
+                  <option value="3">Provolone</option>
+                  <option value="1">American</option>
+                  <option value="2">Colby Jack</option>
+                </select>
+              </div>
+              <div class="large-8 medium-8 columns">
+                <label>Sauces</label>
+                <input id="checkbox1" value="1" type="checkbox"><label for="checkbox1">Ketchup</label>
+                <input id="checkbox2" value="5" type="checkbox"><label for="checkbox2">Mustard</label>
+                <input id="checkbox3" value="1" type="checkbox"><label for="checkbox3">Mayo</label>
+                <input id="checkbox4" value="2" type="checkbox"><label for="checkbox4">BBQ</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <p><a href="#" class="open-modal add-veggies button" data-modal-content=".veggie-options">Add Veggies</a></p>
+                <p class="veggie-list" ></p>
+                <div class="hide veggie-options">
+                  <label>Veggies</label>
+                  <input id="vegcheckbox1" value="1" type="checkbox"><label for="vegcheckbox1">Tomato</label>
+                  <input id="vegcheckbox2" value="5" type="checkbox"><label for="vegcheckbox2">Onion</label>
+                  <input id="vegcheckbox3" value="1" type="checkbox"><label for="vegcheckbox3">Lettuce</label>
+                  <input id="vegcheckbox4" value="2" type="checkbox"><label for="vegcheckbox4">Pickles</label>
+                  <input id="vegcheckbox5" value="2" type="checkbox"><label for="vegcheckbox5">Bacon (yes its a veggie)</label>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+        <!-- <a href="#" class="order&#45;burger success large button">Order Burger</a><br/> -->
+      </div>
+    </div>
+
+    <div class="modal-wrapper hide">
+      <div class="modal-container" >
+        <div class="modal" >
+          <a class="close-modal" >&#215;</a>
+          <div id="modal-content"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/what-input.js"></script>
+    <script src="assets/js/vendor/foundation.js"></script>
+    <script src="assets/js/app-jquery.js"></script>
+  </body>
+</html>
