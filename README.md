@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # JavaScript framworks/lib Battle
 
 ## This is the quest to find the best JS route for our team, here are some key wants/needs:
